@@ -1,6 +1,5 @@
 from Ride import Ride
 from Car import Car
-import copy
 
 class Data:
     def __init__(self, filename):
@@ -39,7 +38,6 @@ class Data:
                     self._rides.append(ride)
     
         # Initialize a list containing the given amount of cars
-        #self._cars = [Car()] * self._nr_vehicles               => For some reason this leads to quantum behavior
         self._cars = []
         for _ in range(self._nr_vehicles):
             self._cars.append(Car())
